@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ArcGIS defaultAssembly="WineMonk.Demo.ProAppModule.CustomSettings.dll"
+        defaultNamespace="WineMonk.Demo.ProAppModule.CustomSettings"
+        xmlns="http://schemas.esri.com/DADF/Registry"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://schemas.esri.com/DADF/Registry file:///D:/software/GeoScene/Pro/bin/ArcGIS.Desktop.Framework.xsd">
+
+	<AddInInfo id="{1f522473-3465-4bab-8a17-90dbd20bceb8}" version="1.0" desktopVersion="3.0.36057">
+		<Name>WineMonk.Demo.ProAppModule.CustomSettings</Name>
+		<Description>WineMonk.Demo.ProAppModule.CustomSettings description</Description>
+		<Image>Images\AddinDesktop32.png</Image>
+		<Author>admin</Author>
+		<Company>Acme</Company>
+		<Date>2025/1/17 10:58:43</Date>
+		<Subject>Framework</Subject>
+	</AddInInfo>
+
+	<modules>
+		<insertModule id="WineMonk_Demo_ProAppModule_CustomSettings_Module" className="Module1" autoLoad="false" caption="Module1">
+
+		</insertModule>
+	</modules>
+	<propertySheets>
+		<updateSheet refID="esri_core_optionsPropertySheet">
+			<insertPage id="esri_sdk_PropertyPageProjectSettings" caption="WineMonk Demo ProAppModule CustomSettings" className="CustomSettingsViewModel" group="Project">
+				<content className="CustomSettingsView" />
+			</insertPage>
+		</updateSheet>
+	</propertySheets>
+</ArcGIS>

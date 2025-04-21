@@ -1,0 +1,344 @@
+﻿<ArcGIS defaultAssembly="WineMonk.Demo.ProAppModule.dll" defaultNamespace="WineMonk.Demo.ProAppModule" xmlns="http://schemas.esri.com/DADF/Registry" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schemas.esri.com/DADF/Registry file:///D:/software/GeoScene/Pro/bin/ArcGIS.Desktop.Framework.xsd">
+	<AddInInfo id="{e4aaa45c-60fd-40f2-a8b4-e51efda34088}" version="1.0" desktopVersion="3.0.36057">
+		<Name>WineMonk.Demo.ProAppModule</Name>
+		<Description>WineMonk.Demo.ProAppModule description</Description>
+		<Image>Images\AddinDesktop32.png</Image>
+		<Author>admin</Author>
+		<Company>Acme</Company>
+		<Date>2024/5/31 13:54:22</Date>
+		<Subject>Framework</Subject>
+		<!-- Note subject can be one or more of these topics: Content, Framework, Editing, Geodatabase, Geometry, Geoprocessing, Layouts, Map Authoring, Map Exploration -->
+		<!-- 主题可以是这些主题中的一个或多个: 内容，框架，编辑，地理数据库，几何，地理处理，布局，地图创作，地图探索 -->
+	</AddInInfo>
+	<modules>
+		<insertModule id="WineMonk_Demo_ProAppModule_Module" className="Module1" autoLoad="false" caption="Module1">
+			<!-- uncomment to have the control hosted on a separate tab -->
+			<!-- 取消 tab 注释以使控件托管在单独的选项卡上 -->
+			<tabs>
+				<tab id="WineMonk_Demo_ProAppModule_Tab1" caption="New Tab">
+					<group refID="WineMonk_Demo_ProAppModule_Group1" />
+				</tab>
+				<tab id="WineMonk_Demo_ProAppModule_Tab2" caption="New Tab 2">
+					<group refID="WineMonk_Demo_ProAppModule_Group2" />
+				</tab>
+				<tab id="WineMonk_Demo_ProAppModule_Tab3" caption="New Tab 3">
+					<group refID="WineMonk_Demo_ProAppModule_Group3" />
+				</tab>
+			</tabs>
+			<groups>
+				<!-- comment this out if you have no controls on the Addin tab to avoid an empty group -->
+				<!-- 如果您没有插件选项卡上的控件，请将其注释掉，以避免出现空组 -->
+				<group id="WineMonk_Demo_ProAppModule_Group1" caption="Group 1" appearsOnAddInTab="false">
+					<!-- host controls within groups -->
+					<!-- 组内主机控件 -->
+					<button refID="WineMonk_Demo_ProAppModule_Code01_MenuButton_ButtonTest" size="large" />
+					<buttonPalette refID="WineMonk_Demo_ProAppModule_Code02_ButtonPalette_ButtonPaletteTest" />
+					<menu refID="WineMonk_Demo_ProAppModule_Code03_Menu_MenuTest" size="middle" />
+					<splitButton refID="WineMonk_Demo_ProAppModule_Code04_SplitButton_SplitButtonTest" />
+					<gallery refID="WineMonk_Demo_ProAppModule_Code05_Gallery_GalleryTest" inline="false" size="large" />
+					<gallery refID="WineMonk_Demo_ProAppModule_Code06_InlineGallery_InlineGalleryTest" inline="true" size="large" />
+					<comboBox refID="WineMonk_Demo_ProAppModule_Code07_ComboBox_ComboBoxTest" />
+					<customControl refID="WineMonk_Demo_ProAppModule_Code08_CustomControl_CustomControlTest" size="large" />
+					<tool refID="WineMonk_Demo_ProAppModule_Code09_MapTool_MapToolTest" size="large" />
+					<tool refID="WineMonk_Demo_ProAppModule_Code10_EmbeddableControl_MapTools_OpenControlMapTool" size="large" />
+					<tool refID="WineMonk_Demo_ProAppModule_Code11_LayoutTool_LayoutToolTest" size="large" />
+				</group>
+				<group id="WineMonk_Demo_ProAppModule_Group2" caption="Group 2" appearsOnAddInTab="false">
+					<button refID="WineMonk_Demo_ProAppModule_Code15_ProWindow_ProWindowTest" size="large" />
+					<button refID="WineMonk_Demo_ProAppModule_Code16_PropertySheet_PropertySheetTest_ShowPropertySheet" size="large" />
+					<button refID="WineMonk_Demo_ProAppModule_Code17_Pane_PaneTest_OpenButton" size="large" />
+					<button refID="WineMonk_Demo_ProAppModule_Code18_ImpersonateMapPane_ImpersonateMapPaneTest_OpenButton" size="large" />
+					<button refID="WineMonk_Demo_ProAppModule_Code19_Dockpane_DockpaneTest_ShowButton" size="large" />
+					<button refID="WineMonk_Demo_ProAppModule_Code20_ButtonDockpane_ButtonDockpaneTest_ShowButton" size="large" />
+				</group>
+				<group id="WineMonk_Demo_ProAppModule_Group3" caption="Group 3" appearsOnAddInTab="false">
+					<button refID="WineMonk_Demo_ProAppModule_Code21_DropHandler_Dockpanes_TestDropHandlerDockpane_ShowButton" size="large" />
+				</group>
+			</groups>
+			<controls>
+				<!-- add your controls here -->
+				<!-- 在这里添加控件 -->
+				<button id="WineMonk_Demo_ProAppModule_Code01_MenuButton_ButtonTest" caption="ButtonTest" className="WineMonk.Demo.ProAppModule.Code01_MenuButton.ButtonTest" loadOnClick="true" smallImage="pack://application:,,,/ArcGIS.Desktop.Resources;component/Images/GenericButtonBlue16.png" largeImage="pack://application:,,,/ArcGIS.Desktop.Resources;component/Images/GenericButtonBlue32.png">
+					<tooltip heading="Tooltip Heading">
+						Tooltip text<disabledText />
+					</tooltip>
+				</button>
+				<button id="WineMonk_Demo_ProAppModule_Code02_ButtonPalette_ButtonPaletteTest_Items_Button1" caption="Palette Button 1" className="WineMonk.Demo.ProAppModule.Code02_ButtonPalette.ButtonPaletteTest_button1" loadOnClick="true" smallImage="pack://application:,,,/ArcGIS.Desktop.Resources;component/Images/GenericButtonGrey16.png" largeImage="pack://application:,,,/ArcGIS.Desktop.Resources;component/Images/GenericButtonGrey32.png">
+					<tooltip heading="Palette Button 1">
+						ToolTip<disabledText />
+					</tooltip>
+				</button>
+				<button id="WineMonk_Demo_ProAppModule_Code02_ButtonPalette_ButtonPaletteTest_Items_Button2" caption="Palette Button 2" className="WineMonk.Demo.ProAppModule.Code02_ButtonPalette.ButtonPaletteTest_button2" loadOnClick="true" smallImage="pack://application:,,,/ArcGIS.Desktop.Resources;component/Images/GenericButtonGrey16.png" largeImage="pack://application:,,,/ArcGIS.Desktop.Resources;component/Images/GenericButtonGrey32.png">
+					<tooltip heading="Palette Button 2">
+						ToolTip<disabledText />
+					</tooltip>
+				</button>
+				<button id="WineMonk_Demo_ProAppModule_Code02_ButtonPalette_ButtonPaletteTest_Items_Button3" caption="Palette Button 3" className="WineMonk.Demo.ProAppModule.Code02_ButtonPalette.ButtonPaletteTest_button3" loadOnClick="true" smallImage="pack://application:,,,/ArcGIS.Desktop.Resources;component/Images/GenericButtonGrey16.png" largeImage="pack://application:,,,/ArcGIS.Desktop.Resources;component/Images/GenericButtonGrey32.png">
+					<tooltip heading="Palette Button 3">
+						ToolTip<disabledText />
+					</tooltip>
+				</button>
+				<button id="WineMonk_Demo_ProAppModule_Code03_Menu_MenuTest_Items_Button1" caption="Menu Button 1" className="WineMonk.Demo.ProAppModule.Code03_Menu.MenuTest_button1" loadOnClick="true" smallImage="pack://application:,,,/ArcGIS.Desktop.Resources;component/Images/GenericButtonGreen16.png" largeImage="pack://application:,,,/ArcGIS.Desktop.Resources;component/Images/GenericButtonGreen32.png">
+					<tooltip heading="Menu Button 1">
+						ToolTip<disabledText />
+					</tooltip>
+				</button>
+				<button id="WineMonk_Demo_ProAppModule_Code03_Menu_MenuTest_Items_Button2" caption="Menu Button 2" className="WineMonk.Demo.ProAppModule.Code03_Menu.MenuTest_button2" loadOnClick="true" smallImage="pack://application:,,,/ArcGIS.Desktop.Resources;component/Images/GenericButtonGreen16.png" largeImage="pack://application:,,,/ArcGIS.Desktop.Resources;component/Images/GenericButtonGreen32.png">
+					<tooltip heading="Menu Button 2">
+						ToolTip<disabledText />
+					</tooltip>
+				</button>
+				<button id="WineMonk_Demo_ProAppModule_Code03_Menu_MenuTest_Items_Button3" caption="Menu Button 3" className="WineMonk.Demo.ProAppModule.Code03_Menu.MenuTest_button3" loadOnClick="true" smallImage="pack://application:,,,/ArcGIS.Desktop.Resources;component/Images/GenericButtonGreen16.png" largeImage="pack://application:,,,/ArcGIS.Desktop.Resources;component/Images/GenericButtonGreen32.png">
+					<tooltip heading="Menu Button 3">
+						ToolTip<disabledText />
+					</tooltip>
+				</button>
+				<button id="WineMonk_Demo_ProAppModule_Code04_SplitButton_SplitButtonTest_Items_Button1" caption="SplitButtonTest 1" className="WineMonk.Demo.ProAppModule.Code04_SplitButton.SplitButtonTest_button1" loadOnClick="true" smallImage="pack://application:,,,/ArcGIS.Desktop.Resources;component/Images/GenericButtonBlack16.png" largeImage="pack://application:,,,/ArcGIS.Desktop.Resources;component/Images/GenericButtonBlack32.png">
+					<tooltip heading="Split Button 1">
+						ToolTip<disabledText />
+					</tooltip>
+				</button>
+				<button id="WineMonk_Demo_ProAppModule_Code04_SplitButton_SplitButtonTest_Items_Button2" caption="SplitButtonTest 2" className="WineMonk.Demo.ProAppModule.Code04_SplitButton.SplitButtonTest_button2" loadOnClick="true" smallImage="pack://application:,,,/ArcGIS.Desktop.Resources;component/Images/GenericButtonBlack16.png" largeImage="pack://application:,,,/ArcGIS.Desktop.Resources;component/Images/GenericButtonBlack32.png">
+					<tooltip heading="Split Button 2">
+						ToolTip<disabledText />
+					</tooltip>
+				</button>
+				<button id="WineMonk_Demo_ProAppModule_Code04_SplitButton_SplitButtonTest_Items_Button3" caption="SplitButtonTest 3" className="WineMonk.Demo.ProAppModule.Code04_SplitButton.SplitButtonTest_button3" loadOnClick="true" smallImage="pack://application:,,,/ArcGIS.Desktop.Resources;component/Images/GenericButtonBlack16.png" largeImage="pack://application:,,,/ArcGIS.Desktop.Resources;component/Images/GenericButtonBlack32.png">
+					<tooltip heading="Split Button 3">
+						ToolTip<disabledText />
+					</tooltip>
+				</button>
+				<comboBox id="WineMonk_Demo_ProAppModule_Code07_ComboBox_ComboBoxTest" caption="ComboBoxTest" className="WineMonk.Demo.ProAppModule.Code07_ComboBox.ComboBoxTest" itemWidth="140" extendedCaption="Extended Caption" isEditable="false" isReadOnly="true" resizable="true">
+					<tooltip heading="Tooltip Heading">
+						Tooltip text<disabledText />
+					</tooltip>
+				</comboBox>
+				<customControl id="WineMonk_Demo_ProAppModule_Code08_CustomControl_CustomControlTest" caption="CustomControlTest" className="WineMonk.Demo.ProAppModule.Code08_CustomControl.CustomControlTestViewModel" loadOnClick="true" smallImage="pack://application:,,,/ArcGIS.Desktop.Resources;component/Images/GenericButtonPurple16.png" largeImage="pack://application:,,,/ArcGIS.Desktop.Resources;component/Images/GenericButtonPurple32.png">
+					<content className="WineMonk.Demo.ProAppModule.Code08_CustomControl.CustomControlTestView" />
+					<tooltip heading="Tooltip Heading">
+						Tooltip text<disabledText />
+					</tooltip>
+				</customControl>
+				<tool id="WineMonk_Demo_ProAppModule_Code09_MapTool_MapToolTest" caption="MapToolTest" className="WineMonk.Demo.ProAppModule.Code09_MapTool.MapToolTest" loadOnClick="true" smallImage="pack://application:,,,/ArcGIS.Desktop.Resources;component/Images/GenericButtonRed16.png" largeImage="pack://application:,,,/ArcGIS.Desktop.Resources;component/Images/GenericButtonRed32.png" condition="esri_mapping_mapPane">
+					<tooltip heading="Tooltip Heading">
+						Tooltip text<disabledText />
+					</tooltip>
+				</tool>
+				<tool id="WineMonk_Demo_ProAppModule_Code10_EmbeddableControl_MapTools_OpenControlMapTool" caption="OpenControlMapTool" className="WineMonk.Demo.ProAppModule.Code10_EmbeddableControl.MapTools.OpenControlMapTool" loadOnClick="true" smallImage="pack://application:,,,/ArcGIS.Desktop.Resources;component/Images/GenericButtonRed16.png" largeImage="pack://application:,,,/ArcGIS.Desktop.Resources;component/Images/GenericButtonRed32.png" condition="esri_mapping_mapPane">
+					<tooltip heading="Tooltip Heading">
+						Tooltip text<disabledText />
+					</tooltip>
+				</tool>
+				<!--use condition="esri_layouts_layoutPane" to enable only in layout view-->
+				<tool id="WineMonk_Demo_ProAppModule_Code11_LayoutTool_LayoutToolTest" caption="LayoutToolTest" className="WineMonk.Demo.ProAppModule.Code11_LayoutTool.LayoutToolTest" loadOnClick="true" smallImage="pack://application:,,,/ArcGIS.Desktop.Resources;component/Images/GenericButtonRed16.png" largeImage="pack://application:,,,/ArcGIS.Desktop.Resources;component/Images/GenericButtonRed32.png">
+					<tooltip heading="Tooltip Heading">
+						Tooltip text<disabledText />
+					</tooltip>
+				</tool>
+				<button id="WineMonk_Demo_ProAppModule_Code14_BackstageTab_BackstageTabTest_Button" caption="BackstageTabTestButton" className="WineMonk.Demo.ProAppModule.Code14_BackstageTab.BackstageTabTestButton" loadOnClick="true">
+					<tooltip heading="BackstageTab Button Heading">
+						BackstageTab button tool tip text.<disabledText />
+					</tooltip>
+				</button>
+				<button id="WineMonk_Demo_ProAppModule_Code15_ProWindow_ProWindowTest" caption="ProWindowTest" className="WineMonk.Demo.ProAppModule.Code15_ProWindow.ShowProWindowTest" loadOnClick="true" smallImage="pack://application:,,,/ArcGIS.Desktop.Resources;component/Images/GenericButtonPurple16.png" largeImage="pack://application:,,,/ArcGIS.Desktop.Resources;component/Images/GenericButtonPurple32.png">
+					<tooltip heading="Tooltip Heading">
+						Tooltip text<disabledText />
+					</tooltip>
+				</button>
+				<button id="WineMonk_Demo_ProAppModule_Code16_PropertySheet_PropertySheetTest_ShowPropertySheet" caption="Show PropertySheetTest" className="WineMonk.Demo.ProAppModule.Code16_PropertyPage.PropertyPageTest_ShowButton" loadOnClick="true" smallImage="pack://application:,,,/ArcGIS.Desktop.Resources;component/Images/GenericButtonPurple16.png" largeImage="pack://application:,,,/ArcGIS.Desktop.Resources;component/Images/GenericButtonPurple32.png">
+					<tooltip heading="Show Property Sheet">
+						Show Property Sheet<disabledText />
+					</tooltip>
+				</button>
+				<button id="WineMonk_Demo_ProAppModule_Code17_Pane_PaneTest_OpenButton" caption="Open PaneTest" className="WineMonk.Demo.ProAppModule.Code17_Pane.PaneTest_OpenButton" loadOnClick="true" smallImage="pack://application:,,,/ArcGIS.Desktop.Resources;component/Images/GenericButtonGreen16.png" largeImage="pack://application:,,,/ArcGIS.Desktop.Resources;component/Images/GenericButtonGreen32.png">
+					<tooltip heading="Open Pane">
+						Open Pane<disabledText />
+					</tooltip>
+				</button>
+				<button id="WineMonk_Demo_ProAppModule_Code18_ImpersonateMapPane_ImpersonateMapPaneTest_OpenButton" caption="Open ImpersonateMapPaneTest" className="WineMonk.Demo.ProAppModule.Code18_ImpersonateMapPane.ImpersonateMapPaneTest_OpenButton" loadOnClick="true" smallImage="pack://application:,,,/ArcGIS.Desktop.Resources;component/Images/GenericButtonGreen16.png" largeImage="pack://application:,,,/ArcGIS.Desktop.Resources;component/Images/GenericButtonGreen32.png" condition="esri_mapping_mapPane">
+					<tooltip heading="Open Pane">
+						Open Pane<disabledText />
+					</tooltip>
+				</button>
+				<button id="WineMonk_Demo_ProAppModule_Code19_Dockpane_DockpaneTest_ShowButton" caption="Show DockpaneTest" className="WineMonk.Demo.ProAppModule.Code19_Dockpane.DockpaneTest_ShowButton" loadOnClick="true" smallImage="pack://application:,,,/ArcGIS.Desktop.Resources;component/Images/GenericButtonPurple16.png" largeImage="pack://application:,,,/ArcGIS.Desktop.Resources;component/Images/GenericButtonPurple32.png">
+					<tooltip heading="Show Dockpane">
+						Show Dockpane<disabledText />
+					</tooltip>
+				</button>
+				<button id="WineMonk_Demo_ProAppModule_Code20_ButtonDockpane_ButtonDockpaneTest_ShowButton" caption="Show ButtonDockpaneTest" className="WineMonk.Demo.ProAppModule.Code20_ButtonDockpane.ButtonDockpaneTest_ShowButton" loadOnClick="true" smallImage="pack://application:,,,/ArcGIS.Desktop.Resources;component/Images/GenericButtonPurple16.png" largeImage="pack://application:,,,/ArcGIS.Desktop.Resources;component/Images/GenericButtonPurple32.png">
+					<tooltip heading="Show Dockpane">
+						Show Dockpane<disabledText />
+					</tooltip>
+				</button>
+				<button id="WineMonk_Demo_ProAppModule_Code20_ButtonDockpane_ButtonDockpaneTest_MenuButton" caption="Burger Menu Button" className="WineMonk.Demo.ProAppModule.Code20_ButtonDockpane.ButtonDockpaneTest_MenuButton" loadOnClick="true" smallImage="pack://application:,,,/ArcGIS.Desktop.Resources;component/Images/GenericButtonPurple16.png" largeImage="pack://application:,,,/ArcGIS.Desktop.Resources;component/Images/GenericButtonPurple32.png">
+					<tooltip heading="Burger Menu Button">
+						ToolTip<disabledText />
+					</tooltip>
+				</button>
+				<button id="WineMonk_Demo_ProAppModule_Code21_DropHandler_Dockpanes_TestDropHandlerDockpane_ShowButton" caption="Show TestDropHandlerDockpane" className="WineMonk.Demo.ProAppModule.Code21_DropHandler.Dockpanes.TestDropHandlerDockpane_ShowButton" loadOnClick="true" smallImage="pack://application:,,,/ArcGIS.Desktop.Resources;component/Images/GenericButtonPurple16.png" largeImage="pack://application:,,,/ArcGIS.Desktop.Resources;component/Images/GenericButtonPurple32.png">
+					<tooltip heading="Show Dockpane">
+						Show Dockpane<disabledText />
+					</tooltip>
+				</button>
+				<tool id="WineMonk_Demo_ProAppModule_Code22_ConstructionTool_ConstructionToolTest" categoryRefID="esri_editing_construction_point" caption="ConstructionToolTest" className="WineMonk.Demo.ProAppModule.Code22_ConstructionTool.ConstructionToolTest" loadOnClick="true" smallImage="pack://application:,,,/ArcGIS.Desktop.Resources;component/Images/GenericButtonRed16.png" largeImage="pack://application:,,,/ArcGIS.Desktop.Resources;component/Images/GenericButtonRed32.png">
+					<!--note: use esri_editing_construction_polyline,  esri_editing_construction_polygon for categoryRefID as needed-->
+					<!-- esri_editing_construction_annotation
+               esri_editing_construction_dimension
+               esri_editing_construction_knowledge_graph_entity
+               esri_editing_construction_knowledge_graph_relationship
+               esri_editing_construction_multipatch
+               esri_editing_construction_multipoint
+               esri_editing_construction_point
+               esri_editing_construction_polygon
+               esri_editing_construction_polyline
+               esri_editing_construction_table -->
+					<tooltip heading="Tooltip Heading">
+						Tooltip text<disabledText />
+					</tooltip>
+					<content guid="cdfdb0f2-c229-458e-bac8-5a638cd98bb3" />
+				</tool>
+				<tool id="WineMonk_Demo_ProAppModule_Code23_TableConstructionTool_TableConstructionToolTest" categoryRefID="esri_editing_construction_table" caption="TableConstructionToolTest" className="WineMonk.Demo.ProAppModule.Code23_TableConstructionTool.TableConstructionToolTest" loadOnClick="true" smallImage="pack://application:,,,/ArcGIS.Desktop.Resources;component/Images/GenericButtonRed16.png" largeImage="pack://application:,,,/ArcGIS.Desktop.Resources;component/Images/GenericButtonRed32.png">
+					<tooltip heading="Tooltip Heading">
+						Tooltip text<disabledText />
+					</tooltip>
+					<content guid="a3d2b675-374a-44c1-be88-e0991cc7fe39" />
+				</tool>
+				<button id="WineMonk_Demo_ProAppModule_Code24_ProCustomItem_ProCustomItemTest_ShowItemName" caption="Show item name" className="WineMonk.Demo.ProAppModule.Code24_ProCustomItem.ShowItemNameProCustomItemTest" loadOnClick="true" smallImage="pack://application:,,,/ArcGIS.Desktop.Resources;component/Images/GenericButtonBlue16.png" largeImage="pack://application:,,,/ArcGIS.Desktop.Resources;component/Images/GenericButtonBlue32.png">
+					<tooltip heading="Tooltip Heading">
+						Tooltip text<disabledText />
+					</tooltip>
+				</button>
+				<button id="WineMonk_Demo_ProAppModule_Code25_ProCustomProjectItem_ProCustomProjectItemTest_AddToProject" caption="Add to Project" className="WineMonk.Demo.ProAppModule.Code25_ProCustomProjectItem.AddToProjectProCustomProjectItemTest" loadOnClick="true" smallImage="pack://application:,,,/ArcGIS.Desktop.Resources;component/Images/GenericButtonBlue16.png" largeImage="pack://application:,,,/ArcGIS.Desktop.Resources;component/Images/GenericButtonBlue32.png">
+					<tooltip heading="Tooltip Heading">
+						Tooltip text<disabledText />
+					</tooltip>
+				</button>
+			</controls>
+			<palettes>
+				<buttonPalette id="WineMonk_Demo_ProAppModule_Code02_ButtonPalette_ButtonPaletteTest" caption="ButtonPaletteTest" dropDown="false" menuStyle="true">
+					<button refID="WineMonk_Demo_ProAppModule_Code02_ButtonPalette_ButtonPaletteTest_Items_Button1" />
+					<button refID="WineMonk_Demo_ProAppModule_Code02_ButtonPalette_ButtonPaletteTest_Items_Button2" />
+					<button refID="WineMonk_Demo_ProAppModule_Code02_ButtonPalette_ButtonPaletteTest_Items_Button3" />
+				</buttonPalette>
+			</palettes>
+			<menus>
+				<menu id="WineMonk_Demo_ProAppModule_Code03_Menu_MenuTest" caption="MenuTest" smallImage="GenericButtonGreen16.png" largeImage="GenericButtonGreen32.png">
+					<button refID="WineMonk_Demo_ProAppModule_Code03_Menu_MenuTest_Items_Button1" />
+					<button refID="WineMonk_Demo_ProAppModule_Code03_Menu_MenuTest_Items_Button2" />
+					<button refID="WineMonk_Demo_ProAppModule_Code03_Menu_MenuTest_Items_Button3" />
+				</menu>
+				<menu id="WineMonk_Demo_ProAppModule_Code20_ButtonDockpane_ButtonDockpaneTest_Menu" caption="Options" contextMenu="true">
+					<button refID="WineMonk_Demo_ProAppModule_Code20_ButtonDockpane_ButtonDockpaneTest_MenuButton" />
+				</menu>
+				<menu id="WineMonk_Demo_ProAppModule_Code24_ProCustomItem_ProCustomItemTest_ContextMenu" caption="ProCustomItemTest_Menu">
+					<button refID="WineMonk_Demo_ProAppModule_Code24_ProCustomItem_ProCustomItemTest_ShowItemName" />
+				</menu>
+				<menu id="ProCustomProjectItemTestContainer_ContextMenu" caption="ProCustomProjectItemTestContainer_Menu">
+					<button refID="esri_folderConnectionAddButton" />
+				</menu>
+				<menu id="WineMonk_Demo_ProAppModule_Code25_ProCustomProjectItem_ProCustomProjectItemTest_ContextMenu" caption="ProCustomProjectItemTest_Menu">
+					<button refID="WineMonk_Demo_ProAppModule_Code25_ProCustomProjectItem_ProCustomProjectItemTest_AddToProject" />
+				</menu>
+			</menus>
+			<splitButtons>
+				<splitButton id="WineMonk_Demo_ProAppModule_Code04_SplitButton_SplitButtonTest">
+					<button refID="WineMonk_Demo_ProAppModule_Code04_SplitButton_SplitButtonTest_Items_Button1" />
+					<button refID="WineMonk_Demo_ProAppModule_Code04_SplitButton_SplitButtonTest_Items_Button2" />
+					<button refID="WineMonk_Demo_ProAppModule_Code04_SplitButton_SplitButtonTest_Items_Button3" />
+				</splitButton>
+			</splitButtons>
+			<galleries>
+				<gallery id="WineMonk_Demo_ProAppModule_Code05_Gallery_GalleryTest" caption="GalleryTest" className="WineMonk.Demo.ProAppModule.Code05_Gallery.GalleryTest" itemsInRow="3" dataTemplateFile="pack://application:,,,/WineMonk.Demo.ProAppModule;component/Code05_Gallery/GalleryTestTemplate.xaml" templateID="GalleryTestItemTemplate" resizable="true" largeImage="pack://application:,,,/ArcGIS.Desktop.Resources;component/Images/GenericButtonOrange32.png">
+					<tooltip heading="Tooltip Heading">
+						Tooltip text<disabledText />
+					</tooltip>
+				</gallery>
+				<gallery id="WineMonk_Demo_ProAppModule_Code06_InlineGallery_InlineGalleryTest" caption="InlineGalleryTest" className="WineMonk.Demo.ProAppModule.Code06_InlineGallery.InlineGalleryTest" itemsInRow="3" dataTemplateFile="pack://application:,,,/WineMonk.Demo.ProAppModule;component/Code06_InlineGallery/InlineGalleryTestTemplate.xaml" templateID="InlineGalleryTestItemTemplate" resizable="true" largeImage="pack://application:,,,/ArcGIS.Desktop.Resources;component/Images/GenericButtonYellow32.png">
+					<tooltip heading="Tooltip Heading">
+						Tooltip text<disabledText />
+					</tooltip>
+				</gallery>
+			</galleries>
+			<panes>
+				<pane id="WineMonk_Demo_ProAppModule_Code17_Pane_PaneTest" caption="PaneTest" className="WineMonk.Demo.ProAppModule.Code17_Pane.PaneTestViewModel" smallImage="pack://application:,,,/ArcGIS.Desktop.Resources;component/Images/GenericButtonGreen16.png" defaultTab="esri_mapping_homeTab" defaultTool="esri_mapping_navigateTool">
+					<content className="WineMonk.Demo.ProAppModule.Code17_Pane.PaneTestView" />
+				</pane>
+				<pane id="WineMonk_Demo_ProAppModule_Code18_ImpersonateMapPane_ImpersonateMapPaneTest" caption="ImpersonateMapPaneTest" className="WineMonk.Demo.ProAppModule.Code18_ImpersonateMapPane.ImpersonateMapPaneTestViewModel" smallImage="pack://application:,,,/ArcGIS.Desktop.Resources;component/Images/GenericButtonGreen16.png" defaultTab="esri_mapping_homeTab" defaultTool="esri_mapping_navigateTool">
+					<content className="WineMonk.Demo.ProAppModule.Code18_ImpersonateMapPane.ImpersonateMapPaneTestView" />
+				</pane>
+			</panes>
+			<dockPanes>
+				<dockPane id="WineMonk_Demo_ProAppModule_Code19_Dockpane_DockpaneTest" caption="DockpaneTest" className="WineMonk.Demo.ProAppModule.Code19_Dockpane.DockpaneTestViewModel" dock="group" dockWith="esri_core_projectDockPane">
+					<content className="WineMonk.Demo.ProAppModule.Code19_Dockpane.DockpaneTestView" />
+				</dockPane>
+				<dockPane id="WineMonk_Demo_ProAppModule_Code20_ButtonDockpane_ButtonDockpaneTest" caption="ButtonDockpaneTest" className="WineMonk.Demo.ProAppModule.Code20_ButtonDockpane.ButtonDockpaneTestViewModel" dock="group" dockWith="esri_core_projectDockPane">
+					<content className="WineMonk.Demo.ProAppModule.Code20_ButtonDockpane.ButtonDockpaneTestView" />
+				</dockPane>
+				<dockPane id="WineMonk_Demo_ProAppModule_Code21_DropHandler_Dockpanes_TestDropHandlerDockpane" caption="TestDropHandlerDockpane" className="WineMonk.Demo.ProAppModule.Code21_DropHandler.Dockpanes.TestDropHandlerDockpaneViewModel" dock="group" dockWith="esri_core_projectDockPane">
+					<content className="WineMonk.Demo.ProAppModule.Code21_DropHandler.Dockpanes.TestDropHandlerDockpaneView" />
+				</dockPane>
+			</dockPanes>
+		</insertModule>
+	</modules>
+	<categories>
+		<updateCategory refID="esri_embeddableControls">
+			<insertComponent id="WineMonk_Demo_ProAppModule_Code10_EmbeddableControl_EmbeddableControlTest" className="WineMonk.Demo.ProAppModule.Code10_EmbeddableControl.EmbeddableControlTestViewModel">
+				<content className="WineMonk.Demo.ProAppModule.Code10_EmbeddableControl.EmbeddableControlTestView" />
+			</insertComponent>
+		</updateCategory>
+		<updateCategory refID="esri_mapping_MapTrayButtons">
+			<insertComponent id="WineMonk_Demo_ProAppModule_Code12_MapTrayButton_MapTrayButtonTest" className="WineMonk.Demo.ProAppModule.Code12_MapTrayButton.MapTrayButtonTest">
+				<content L_name="MapTrayButtonTest" largeImage="pack://application:,,,/ArcGIS.Desktop.Resources;component/Images/GenericButtonRed32.png" smallImage="pack://application:,,,/ArcGIS.Desktop.Resources;component/Images/GenericButtonRed16.png" L_tooltipHeading="MapTrayButtonTest" L_tooltip="This is a sample tray button" />
+			</insertComponent>
+		</updateCategory>
+		<updateCategory refID="esri_layouts_LayoutTrayButtons">
+			<insertComponent id="WineMonk_Demo_ProAppModule_Code13_LayoutTrayButton_LayoutTrayButtonTest" className="WineMonk.Demo.ProAppModule.Code13_LayoutTrayButton.LayoutTrayButtonTest">
+				<content L_name="LayoutTrayButtonTest" largeImage="pack://application:,,,/ArcGIS.Desktop.Resources;component/Images/GenericButtonGreen32.png" smallImage="pack://application:,,,/ArcGIS.Desktop.Resources;component/Images/GenericButtonGreen16.png" L_tooltipHeading="LayoutTrayButtonTest" L_tooltip="This is a sample tray button" />
+			</insertComponent>
+		</updateCategory>
+		<updateCategory refID="esri_customItems">
+			<insertComponent id="WineMonk_Demo_ProAppModule_Code24_ProCustomItem_ProCustomItemTest" className="WineMonk.Demo.ProAppModule.Code24_ProCustomItem.ProCustomItemTest">
+				<!--TODO: Modify the fileExtension attribute to your unique custom item's file extension.-->
+				<!--You cannot use any file extensions known to Pro and Geoprocessing.-->
+				<content displayName="ProCustomItemTest" fileExtension="acme360292" isContainer="false" keywords="ProCustomItemTest" contextMenuID="WineMonk_Demo_ProAppModule_Code24_ProCustomItem_ProCustomItemTest_ContextMenu">
+					<filterFlags>
+						<!--Change this flag as needed. See FilterFlag enum. Example: AddToMap, DontBrowseFiles...-->
+						<type id="File" />
+					</filterFlags>
+				</content>
+			</insertComponent>
+			<insertComponent id="WineMonk_Demo_ProAppModule_Code25_ProCustomProjectItem_ProCustomProjectItemTest" className="WineMonk.Demo.ProAppModule.Code25_ProCustomProjectItem.ProCustomProjectItemTest" containerType="ProCustomProjectItemTestContainer">
+				<!--TODO: Modify the fileExtension attribute to your unique custom item's file extension.-->
+				<!--You cannot use any file extensions known to Pro and Geoprocessing.-->
+				<content displayName="ProCustomProjectItemTest" fileExtension="acme245081" isContainer="false" keywords="ProCustomProjectItemTest" contextMenuID="WineMonk_Demo_ProAppModule_Code25_ProCustomProjectItem_ProCustomProjectItemTest_ContextMenu">
+					<filterFlags>
+						<!--Change this flag as needed. See FilterFlag enum. Example: AddToMap, DontBrowseFiles...-->
+						<type id="File" />
+					</filterFlags>
+				</content>
+			</insertComponent>
+		</updateCategory>
+		<updateCategory refID="esri_core_projectContainers">
+			<insertComponent id="WineMonk_Demo_ProAppModule_Code25_ProCustomProjectItem_ProCustomProjectItemTest_Container" className="WineMonk.Demo.ProAppModule.Code25_ProCustomProjectItem.ProCustomProjectItemTestContainer" insert="before" placeWith="esri_geodatabase_folderConnectionContainer">
+				<content type="ProCustomProjectItemTestContainer" displayName="ProCustomProjectItemTestContainer" contextMenu="ProCustomProjectItemTestContainer_ContextMenu" />
+			</insertComponent>
+		</updateCategory>
+	</categories>
+	<backstage>
+		<insertButton refID="WineMonk_Demo_ProAppModule_Code14_BackstageTab_BackstageTabTest_Button" insert="before" placeWith="esri_core_exitApplicationButton" separator="true" />
+		<insertTab id="WineMonk_Demo_ProAppModule_Code14_BackstageTab_BackstageTabTest" caption="BackstageTabTest" className="WineMonk.Demo.ProAppModule.Code14_BackstageTab.BackstageTabTestViewModel" insert="before" placeWith="esri_core_exitApplicationButton">
+			<content className="WineMonk.Demo.ProAppModule.Code14_BackstageTab.BackstageTabTestView" />
+		</insertTab>
+	</backstage>
+	<propertySheets>
+		<insertSheet id="WineMonk_Demo_ProAppModule_Code16_PropertySheet_PropertySheetTest" caption="PropertySheetTest" hasGroups="true">
+			<page id="WineMonk_Demo_ProAppModule_Code16_PropertyPage_PropertyPageTest" caption="PropertyPageTest" className="WineMonk.Demo.ProAppModule.Code16_PropertyPage.PropertyPageTestViewModel" group="Group 1">
+				<content className="WineMonk.Demo.ProAppModule.Code16_PropertyPage.PropertyPageTestView" />
+			</page>
+		</insertSheet>
+	</propertySheets>
+	<dropHandlers>
+		<!--specific file extensions can be set like so: dataTypes=".XLS|.xls"-->
+		<insertHandler id="WineMonk_Demo_ProAppModule_Code21_DropHandler_DropHandlerTest" className="WineMonk.Demo.ProAppModule.Code21_DropHandler.DropHandlerTest" dataTypes="*" />
+	</dropHandlers>
+</ArcGIS>

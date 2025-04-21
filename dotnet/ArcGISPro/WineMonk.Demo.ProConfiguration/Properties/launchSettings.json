@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "WineMonk.Demo.ProConfiguration": {
+      "commandName": "Executable",
+      "executablePath": "D:\\software\\GeoScene\\Pro\\bin\\ArcGISPro.exe",
+      "commandLineArgs": "/config:WineMonk.Demo.ProConfiguration"
+    }
+  }
+}

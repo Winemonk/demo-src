@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "WineMonk.Demo.ProAppModule.CustomSettings": {
+      "commandName": "Executable",
+      "executablePath": "D:\\software\\GeoScene\\Pro\\bin\\GeoScenePro.exe"
+    }
+  }
+}

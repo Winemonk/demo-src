@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ArcGIS defaultAssembly="WineMonk.Demo.ProAppModule.License.dll"
+        defaultNamespace="WineMonk.Demo.ProAppModule.License"
+        xmlns="http://schemas.esri.com/DADF/Registry"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://schemas.esri.com/DADF/Registry file:///D:/software/GeoScene/Pro/bin/ArcGIS.Desktop.Framework.xsd">
+
+  <AddInInfo id="{6e04fec0-5990-4d59-9503-a3df5352626a}" version="1.0" desktopVersion="3.0.36057">
+    <Name>WineMonk.Demo.ProAppModule.License</Name>   
+    <Description>WineMonk.Demo.ProAppModule.License description</Description>
+    <Image>Images\AddinDesktop32.png</Image>
+    <Author>admin</Author>
+    <Company>Acme</Company>
+    <Date>2025/1/17 10:17:49</Date>
+    <Subject>Framework</Subject>
+  </AddInInfo>
+
+  <modules>
+    <insertModule id="WineMonk_Demo_ProAppModule_License_Module" className="Module1" autoLoad="false" caption="Module1">
+		<extensionConfig description="WineMonk Demo ProAppModule License"
+						 productName="WineMonk Demo ProAppModule" message="ProAppModule"
+						 hasExtendedInfo="true"  />
+    </insertModule>
+  </modules>
+</ArcGIS>

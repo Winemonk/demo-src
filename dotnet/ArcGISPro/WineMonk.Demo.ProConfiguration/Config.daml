@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ArcGIS defaultAssembly="WineMonk.Demo.ProConfiguration.dll"
+        defaultNamespace="WineMonk.Demo.ProConfiguration"
+        xmlns="http://schemas.esri.com/DADF/Registry"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://schemas.esri.com/DADF/Registry file:///D:/software/GeoScene/Pro/bin/ArcGIS.Desktop.Framework.xsd">
+
+  <AddInInfo id="{3b63f488-21cd-4cd6-8e50-2a40a51b1b8b}" version="1.0" desktopVersion="3.0.36057">
+    <Name>WineMonk.Demo.ProConfiguration</Name>
+    <Description>WineMonk.Demo.ProConfiguration description</Description>
+    <Image>Images\AddinDesktop32.png</Image>
+    <Author>admin</Author>
+    <Company>Acme</Company>
+    <Date>2024/5/31 13:36:05</Date>
+    <Subject>Framework</Subject>
+    <!-- Note subject can be one or more of these topics:
+                    Content, Framework, Editing, Geodatabase, Geometry, Geoprocessing, Layouts, Map Authoring, Map Exploration -->
+  </AddInInfo>
+
+  <Configuration>
+    <ConfigurationManager className="ConfigurationManager1"/>
+  </Configuration>
+
+  <modules>
+    <insertModule id="WineMonk.Demo.ProConfiguration_Module" className="Module1" autoLoad="false" caption="Module1">
+      <!-- uncomment to have the control hosted on a separate tab-->
+      <tabs>
+        <!--<tab id="WineMonk.Demo.ProConfiguration_Tab1" caption="New Tab">
+          <group refID="WineMonk.Demo.ProConfiguration_Group1"/>
+        </tab>-->
+      </tabs>
+
+      <groups>
+
+      </groups>
+
+      <controls>
+        <!-- add your controls here -->
+      </controls>
+
+    </insertModule>
+  </modules>
+</ArcGIS>
