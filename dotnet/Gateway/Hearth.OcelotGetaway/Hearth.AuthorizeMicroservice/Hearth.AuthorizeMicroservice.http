@@ -1,0 +1,6 @@
+@Hearth.AuthorizeMicroservice_HostAddress = http://localhost:5171
+
+GET {{Hearth.AuthorizeMicroservice_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

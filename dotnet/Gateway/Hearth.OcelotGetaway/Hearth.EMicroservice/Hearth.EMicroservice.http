@@ -1,0 +1,6 @@
+@Hearth.EMicroservice_HostAddress = http://localhost:5186
+
+GET {{Hearth.EMicroservice_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

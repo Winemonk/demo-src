@@ -1,0 +1,6 @@
+@Hearth.BMicroservice_HostAddress = http://localhost:5230
+
+GET {{Hearth.BMicroservice_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

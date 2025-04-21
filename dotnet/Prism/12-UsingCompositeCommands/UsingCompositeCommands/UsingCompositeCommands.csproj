@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>$(PrismTargetFramework)</TargetFramework>
+    <AssemblyName>UsingCompositeCommands</AssemblyName>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Prism.Unity" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\UsingCompositeCommands.Core\UsingCompositeCommands.Core.csproj" />
+  </ItemGroup>
+</Project>

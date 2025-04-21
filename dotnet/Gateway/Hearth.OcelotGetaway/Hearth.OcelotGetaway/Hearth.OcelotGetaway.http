@@ -1,0 +1,6 @@
+@Hearth.OcelotGetaway_HostAddress = http://localhost:5231
+
+GET {{Hearth.OcelotGetaway_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
